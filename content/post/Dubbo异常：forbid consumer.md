@@ -13,11 +13,12 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
-
 使用Dubbo开发过程中，经常会遇到forbid consumer whitelist/blacklist的错误.  
 日志提示当前调用者被禁止访问某个服务，请检查下注册中心访问列表，还有黑名单和白名单。  
-实际情况是我并根本没有对服务做白名单和黑名单机制.<!-- more -->
+实际情况是我并根本没有对服务做白名单和黑名单机制.
+<!-- more -->
 ``` log
 com.alibaba.dubbo.rpc.RpcException: Forbid consumer 10.159.98.101 access service com.ai.ecs.order.api.OrderService from registry 10.154.73.105:2181 use dubbo version 2.5.3, Please check registry access list (whitelist/blacklist).
 ```

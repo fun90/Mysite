@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 [V2Ray](https://www.v2ray.com) 原生支持 Socks、HTTP、VMess 等协议。（推荐使用VMess）
 
 - 在一个进程中可以配置不同的端口使用不同的协议进行通讯。
@@ -24,9 +26,8 @@ comment: false
 客户端支持Windows(测试部分通过)、MacOS(测试通过)、iOS(测试通过)、Android。
 
 <!-- more -->
-
 ## V2Ray 服务端安装
-我是在[DigitalOcean VPS](http://www.digitalOcean.com)上使用Ubuntu16.04 x64系统搭建V2Ray服务端，在VPS中输入一句命令即可完成V2Ray服务端的安装：
+我是在[DigitalOcean VPS](https://m.do.co/c/00a39cb0d92f)上使用Ubuntu16.04 x64系统搭建V2Ray服务端，在VPS中输入一句命令即可完成V2Ray服务端的安装：
 
 `bash <(curl -L -s https://install.direct/go.sh)`
 此脚本会自动安装以下文件：

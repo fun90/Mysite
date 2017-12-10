@@ -13,6 +13,7 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
 在项目中前端和后端的验证都必不可少，公司使用的框架是基于Spring MVC开发，但未对验证做相应的解决方案，在网上找到了Validation.FO的验证框架，顿时被其简洁的设计所吸引，经过对其自定义的拓展开发，集成到了项目中。
 

@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 jcv-maven-plugin、maven-replacer-plugin这两款maven打包插件均可以实现在打出的包自动添加js/css版本号。jcv-maven-plugin是专门为压缩js/css文件和添加js/css版本号设计的一款插件，使用的人很少，使用说明文档较为模糊。maven-replacer-plugin则可以在打包时匹配指定文件中的内容并替换，这里介绍用来自动添加js/css版本号。
 
 <!-- more -->

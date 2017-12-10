@@ -1,5 +1,5 @@
 ---
-title: "Git-在新需求还未开发完时突然接到紧急修复任务怎么办?"
+title: "Git-在新需求未开发完时突然接到紧急修复任务怎么办?"
 date: 2017-08-16T23:04:15+08:00
 lastmod: 2017-08-16T23:04:15+08:00
 draft: false
@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 ## 关键字
 stash 储藏，保存当前的工作进度
 pull 从服务器更新代码

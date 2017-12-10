@@ -13,6 +13,7 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
 需求至上，最近的，尽心费神，搭建图片服务器，研究了下分布式存储，最后选用了轻量级的fastdfs，刚接触使用难免会踩坑，整理些互联网上的资料都是大牛们的走过的路，这些资料能尽量避免少踩坑。
 

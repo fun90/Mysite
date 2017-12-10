@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 你编，或者不编程，项目就在那里，还未完成。你调，或者不调试，BUG就在那里，早晚得改。你踩，或者不踩，坑都在那里，等下一个受害者。
 
 ## 变量作用域

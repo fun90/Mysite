@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 ## 事务传递
 ![](http://7xnocv.com1.z0.glb.clouddn.com/spring-tx-1.png)<!-- more -->
 ## 事务配置
