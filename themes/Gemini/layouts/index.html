@@ -6,8 +6,15 @@
     <div class="post-lists">
         <div class="post-lists-body">
         {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+        <!-- 卡片颜色乱序 -->
+        {{ $colors := shuffle (slice "#426AB3" "#A6325A" "#9966CC" "#D6A78B" "#37ACCB" "#B8989C") }}
+        {{ $colorsLen := len $colors }}
         {{ range $index, $page := $paginator.Pages }}
-            {{ .Scratch.Set "pageIndex" $index }}
+            {{ if (ge $index $colorsLen) }}
+                {{ .Scratch.Set "color" (index $colors (sub $index $colorsLen)) }}
+            {{ else }}
+                {{ .Scratch.Set "color" (index $colors $index) }}
+            {{ end }}
             {{ .Render "summary" }}
         {{ end }}
         </div>

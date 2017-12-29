@@ -3,13 +3,10 @@
         {{ if .Params.image }}
             <div class="item-thumb bg-deepgrey" style="background-image:url({{ .Params.image }});"></div>
         {{ else }}     
-            {{ $colors := slice "#426AB3" "#A6325A" "#9966CC" "#D6A78B" "#37ACCB" "#B8989C" }}
-            {{ $colorsLen := len $colors }}
-            {{ $index := .Scratch.Get "pageIndex" }}
-            {{ if ge $index $colorsLen }}
-                {{ $index := index (seq (sub $colorsLen 1) | shuffle) 0 }}
-            {{ end }}
-            <div class="item-thumb bg-deepgrey" style="background:{{ index $colors $index }}"></div>
+
+            {{ $color := .Scratch.Get "color" }}
+ 
+            <div class="item-thumb bg-deepgrey" style="background:{{ $color }}"></div>
         {{ end }}
         <a href="{{ .Permalink }}">
             <div class="item-desc">
