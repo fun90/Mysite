@@ -149,8 +149,8 @@ a {
 a:active,
 a:focus,
 a:hover {
-    color: #37accb !important;
-    outline: 0;
+    color: #eb5055;
+    outline: 0
 }
 
 ol,
@@ -350,7 +350,7 @@ textarea:-ms-input-placeholder {
 }
 
 .bg-deepgrey {
-    background-color: #37accb;
+    background-color: rgba(0, 0, 0, .5)!important
 }
 
 .bg-blue {
@@ -812,12 +812,7 @@ textarea:-ms-input-placeholder {
 
 .post-list-item-container:hover {
     -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
-    -webkit-transform: translate(0, -10px);
-    transform: translate(0, -10px);
-    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1)
 }
 
 .post-list-item-container .item-thumb {
@@ -845,7 +840,7 @@ textarea:-ms-input-placeholder {
     margin: 0;
     padding: 0;
     word-break: break-all;
-    /*! opacity: 0; */
+    opacity: 0;
     color: #fff
 }
 
@@ -859,14 +854,14 @@ textarea:-ms-input-placeholder {
 }
 
 .post-list-item-container:hover .item-desc {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .5)
 }
 
 .post-list-item-container:hover .item-desc p {
-    /*! -webkit-animation: fade-in .5s; */
-    /*! animation: fade-in; */
-    /*! animation-duration: .5s; */
-    /*! opacity: 1; */
+    -webkit-animation: fade-in .5s;
+    animation: fade-in;
+    animation-duration: .5s;
+    opacity: 1
 }
 
 .post-list-item-container .item-slant {
@@ -1452,7 +1447,7 @@ textarea:-ms-input-placeholder {
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
     -webkit-transform: scale(1.03);
-    transform: scale(1.03);
+    transform: scale(1.03)
 }
 
 .post-list-item-container .item-label.bg-blue .item-title a {
@@ -2113,7 +2108,7 @@ textarea:-ms-input-placeholder {
     font-size: 14px;
     padding: 0 0 10px 0;
     text-decoration: none;
-    color: #5f5f5f;
+    color: #5f5f5f
 }
 
 
@@ -2128,7 +2123,7 @@ textarea:-ms-input-placeholder {
 }
 
 .footer-meta .meta-posts li a {
-    color: #5f5f5f;
+    color: #5f5f5f
 }
 
 .footer-meta .meta-comments li {

@@ -4,13 +4,8 @@
             <div class="item-thumb bg-deepgrey" style="background-image:url({{ .Params.image }});"></div>
 
         {{ else }}
-            <!--{{ shuffle (seq 1 5) }}-->
-            {{ $images := shuffle (seq 0 99) }}
-            {{ range first 1 $images }}            
-
-                <div class="item-thumb bg-deepgrey" style="background-image:url(/images/thumbs/{{ . }}.jpg);"></div>
-            {{ end }}
-            {{ end }}
+            <div class="item-thumb bg-deepgrey"></div>
+        {{ end }}
         <a href="{{ .Permalink }}">
             <div class="item-desc">
                 <p>{{ .Summary }} </p>
