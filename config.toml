@@ -14,14 +14,14 @@ disableLiveReload = true
   Keywords = "Java, Web, Mac, 软件"
   Author = "Fun90"
   recentPostCount = 3
-  intro = ["I am a iOS Developer", "Work in Hangzhou"]
+  intro = ["I am a Java Developer", "Work in Changsha"]
 
 [[params.social]]
   title = "Email"
-  url = "mailto:itxuz@itxuz.com"
+  url = "mailto:congzi@live.com"
 [[params.social]]
   title = "Github"
-  url = "https://github.com/mjyi"
+  url = "https://github.com/fun90"
 [[params.social]]
   title = "RSS"
   url = ""

@@ -2,9 +2,14 @@
     <div class="post-list-item-container">
         {{ if .Params.image }}
             <div class="item-thumb bg-deepgrey" style="background-image:url({{ .Params.image }});"></div>
-
-        {{ else }}
-            <div class="item-thumb bg-deepgrey"></div>
+        {{ else }}     
+            {{ $colors := slice "#426AB3" "#A6325A" "#9966CC" "#D6A78B" "#37ACCB" "#B8989C" }}
+            {{ $colorsLen := len $colors }}
+            {{ $index := .Scratch.Get "pageIndex" }}
+            {{ if ge $index $colorsLen }}
+                {{ $index := index (seq (sub $colorsLen 1) | shuffle) 0 }}
+            {{ end }}
+            <div class="item-thumb bg-deepgrey" style="background:{{ index $colors $index }}"></div>
         {{ end }}
         <a href="{{ .Permalink }}">
             <div class="item-desc">
@@ -16,11 +21,11 @@
         <div class="item-label">
             <div class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
             <div class="item-meta clearfix">
-                <!--随机选择一个图标-->
-                {{ $icos := shuffle (slice "book" "note" "chat" "code" "image" "web" "link" "design" "lock") }} 
-                {{range first 1 $icos }}
-                <div class="item-meta-ico bg-ico-{{ . }}" style="background: url({{ $.Site.BaseURL }}/images/bg-ico.png) no-repeat;background-size: 40px auto;"></div>
-                {{ end }} 
+                {{ if .Params.icon }}
+                <div class="item-meta-ico bg-ico-{{ .Params.icon }}" style="background: url({{ $.Site.BaseURL }}/images/bg-ico.png) no-repeat;background-size: 40px auto;"></div>
+                {{ else }}
+                    <div class="item-meta-ico bg-ico-web" style="background: url({{ $.Site.BaseURL }}/images/bg-ico.png) no-repeat;background-size: 40px auto;"></div>
+                {{ end }}
                 {{ range .Params.categories }}
                 <div class="item-meta-cat"><a href="/categories/{{ urlize . }}">{{ . }}</a></div>
                 {{ end }}

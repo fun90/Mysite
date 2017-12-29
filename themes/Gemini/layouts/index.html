@@ -6,8 +6,9 @@
     <div class="post-lists">
         <div class="post-lists-body">
         {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-        {{ range $paginator.Pages }}
-        {{ .Render "summary"}}
+        {{ range $index, $page := $paginator.Pages }}
+            {{ .Scratch.Set "pageIndex" $index }}
+            {{ .Render "summary" }}
         {{ end }}
         </div>
     </div>

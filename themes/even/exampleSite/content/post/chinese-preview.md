@@ -8,7 +8,7 @@ categories: ["中文"]
 author: "Wikipedia"
 # you can close something for this content if you open it in config.toml.
 comment: false
-# toc: false
+toc: true
 # reward: false
 mathjax: false
 
