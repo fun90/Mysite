@@ -45,11 +45,7 @@
     "load-grunt-tasks": "~0.2.0",
     "rand-token": "^0.2.1"
   },
-<<<<<<< HEAD
   "dependencies": {
     "grunt-cli": "^1.2.0"
   }
-=======
-  "dependencies": {}
->>>>>>> 39393fd0e92be72eb0afb9ef0db329c56c2b04c6
 }

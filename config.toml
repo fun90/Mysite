@@ -82,11 +82,7 @@ disableLiveReload = true
   weight = 5
   identifier = "about"
   name = "About"
-<<<<<<< HEAD
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-info-circle\"></i>"
-=======
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
->>>>>>> 39393fd0e92be72eb0afb9ef0db329c56c2b04c6
   url = "/#about"
 
 [[menu.links]]
@@ -141,11 +137,7 @@ disableLiveReload = true
   #    large sidebar is swiped on all lower screens
   # 5: Display header bar on all screens and large sidebar is swiped on large screen
   # 6: Display header bar on all screens and medium sidebar is swiped
-<<<<<<< HEAD
   sidebarBehavior = 2
-=======
-  sidebarBehavior = 1
->>>>>>> 39393fd0e92be72eb0afb9ef0db329c56c2b04c6
 
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly
