@@ -18,7 +18,11 @@ defaultContentLanguage = "zh-cn"
 title = "Fun90"
 theme = "tranquilpeak"
 disqusShortname = "Fun90's Blog"
+<<<<<<< HEAD
 googleAnalytics = "UA-110673269-2"
+=======
+googleAnalytics = "UA-110673269-1"
+>>>>>>> 39393fd0e92be72eb0afb9ef0db329c56c2b04c6
 canonifyurls = true
 enableRobotsTXT = true
 enableEmoji = true
@@ -78,7 +82,11 @@ disableLiveReload = true
   weight = 5
   identifier = "about"
   name = "About"
+<<<<<<< HEAD
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-info-circle\"></i>"
+=======
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+>>>>>>> 39393fd0e92be72eb0afb9ef0db329c56c2b04c6
   url = "/#about"
 
 [[menu.links]]
@@ -133,7 +141,11 @@ disableLiveReload = true
   #    large sidebar is swiped on all lower screens
   # 5: Display header bar on all screens and large sidebar is swiped on large screen
   # 6: Display header bar on all screens and medium sidebar is swiped
+<<<<<<< HEAD
   sidebarBehavior = 2
+=======
+  sidebarBehavior = 1
+>>>>>>> 39393fd0e92be72eb0afb9ef0db329c56c2b04c6
 
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly
@@ -158,7 +170,11 @@ disableLiveReload = true
   autoThumbnailImage = true
 
   # Your favicon path, default is "/favicon.png"
+<<<<<<< HEAD
   favicon = "/favicon.png"
+=======
+  favicon = "/favicon.ico"
+>>>>>>> 39393fd0e92be72eb0afb9ef0db329c56c2b04c6
 
   # Header configuration
   # The link at the right of the header is customizable
