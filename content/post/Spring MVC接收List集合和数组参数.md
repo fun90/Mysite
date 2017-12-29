@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 Spring MVC在接收集合请求参数时，需要根据参数情况对Controller和前端JS代码做相应的调整。在接收基本类型的List或数组时，只需使用`@RequestParam`指定对应名称即可完成转换。但是在接收对象实体类型的List时，需要在Controller方法的集合参数里前添加`@RequestBody`，而`@RequestBody`默认接收的enctype (MIME编码)是`application/json`，因此发送POST请求时需要设置请求报文头信息，否则Spring MVC在解析集合请求参数时不会自动的转换成JSON数据再解析成相应的集合。
 
 <!-- more -->

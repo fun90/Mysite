@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 ## Hexo配置
 _config.yml 配置文件，respsitory配置为自己的仓库地址，注意type为git
 

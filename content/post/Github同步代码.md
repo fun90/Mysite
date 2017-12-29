@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 Git是个非常强大的源代码管理系统，能支持复杂的任务。似乎强大和复杂是一对孪生兄弟，Git的操作也不那么简单，让人有种手握重权却不知道怎么玩的尴尬，以及对自己智商的严重怀疑。下面是最基本的Git工作步骤，让我们找回一点点自信吧。
 
 ## 配置Git

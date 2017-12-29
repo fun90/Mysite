@@ -13,6 +13,7 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
 总结了几张简单的图
 ## Collection

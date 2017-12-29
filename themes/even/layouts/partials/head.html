@@ -31,6 +31,7 @@
 <!-- baidu & google verification  -->
 {{ with .Site.Params.baidu_verification }}<meta name="baidu-site-verification" content="{{.}}" />{{ end }}
 {{ with .Site.Params.google_verification }}<meta name="google-site-verification" content="{{.}}" />{{ end }}
+{{ template "_internal/google_analytics_async.html" . }}
 
 <!-- Site Generator -->
 <meta name="generator" content="Hugo {{ .Hugo.Version }}" />

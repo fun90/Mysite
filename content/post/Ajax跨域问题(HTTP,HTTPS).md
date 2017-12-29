@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 浏览器遵循[同源策略(same-origin policy)](https://en.wikipedia.org/wiki/Same-origin_policy)，它不允许当前站点的脚本与不同源的站点之间进行数据交互，只要协议、域名、端口有任何一个不同，都被视为不同源。但有时确实又必须在当前站点通过Ajax请求其他不同源的资源，这明显与同源策略相悖，于是就有了JavaScript跨域问题。
 
 至于为什么要有同源策略，可以Google一下同源策略的详解，这里只记录如何解决Ajax跨域POst的问题，包括不同协议(HTTP, HTTPS)之间的Ajax请求。跨域问题的解决办法有很多，对于端口和协议的不同，只能通过后台来解决。

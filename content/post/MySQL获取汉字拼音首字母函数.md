@@ -13,7 +13,9 @@ comment: false
 # toc: false
 # reward: false
 # mathjax: false
+comments: false
 ---
+<!-- toc -->
 功能：支持多个汉字
 用法：SELECT PINYIN('单身不是狗');
 +----------------------+
