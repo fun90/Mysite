@@ -69,9 +69,9 @@ comments: false
 
 ``` java
 @Transactional(propagation= Propagation.REQUIRED,rollbackFor=Exception.class,timeout=1,isolation= Isolation.DEFAULT)
-	public void save(Map<String, Object> map) throws Exception {
+public void save(Map<String, Object> map) throws Exception {
 
-	}
+}
 ```
 
 在要使用事务管理的类或者方法上增加代码@Transactional，Spring官方团队建议不要在接口使用。在类上使用@Transactional，类中的所有public方法都将使用事务。

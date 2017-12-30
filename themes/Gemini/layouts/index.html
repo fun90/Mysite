@@ -11,7 +11,7 @@
         {{ $colorsLen := len $colors }}
         {{ range $index, $page := $paginator.Pages }}
             {{ if (ge $index $colorsLen) }}
-                {{ .Scratch.Set "color" (index $colors (sub $index $colorsLen)) }}
+                {{ .Scratch.Set "color" (index $colors (mod $index $colorsLen)) }}
             {{ else }}
                 {{ .Scratch.Set "color" (index $colors $index) }}
             {{ end }}
