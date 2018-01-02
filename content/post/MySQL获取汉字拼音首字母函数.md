@@ -3,7 +3,7 @@ title: "MySQL获取汉字拼音首字母函数"
 date: 2014-01-25T21:49:05+08:00
 lastmod: 2014-01-25T21:49:05+08:00
 draft: false
-tags: ["MySQL", "DB"]
+tags: ["MySQL"]
 categories: ["技术"]
 
 weight: 10
