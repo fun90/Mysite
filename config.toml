@@ -26,16 +26,19 @@ disableLiveReload = true
   title = "RSS"
   url = ""
 
-
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = -200
 [[menu.main]]
   name = "Archives"
   url = "/post/"
-  weight = -200
+  weight = -180
 [[menu.main]]
   name = "Tags"
   url = "/tags/"
-  weight = -180
+  weight = -160
 [[menu.main]]
   name = "About"
   url = "/about"
-  weight = -160
+  weight = -140

@@ -10,8 +10,11 @@
                 <br>
                 <br>
                 {{ $data := .Data }}
+                {{ $colors := slice "#426AB3" "#A6325A" "#9966CC" "#D6A78B" "#37ACCB" "#B8989C" "#E0C1AF" "#E47888" }}
+	            {{ $max := sub (len $colors) 1 }}
                 {{ range $key, $value := .Data.Terms.ByCount }}
-                <a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}" class=" bg-white">
+                {{ $colorIndex := index (seq 0 $max | shuffle) 0 }}
+                <a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}" style="background: {{ index $colors $colorIndex }}">
                     # {{ $value.Name | title }}({{ $value.Count }})
                 </a>                
                 {{ end }}
