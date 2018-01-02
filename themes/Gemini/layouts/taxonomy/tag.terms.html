@@ -10,11 +10,7 @@
                 <br>
                 <br>
                 {{ $data := .Data }}
-<<<<<<< Updated upstream
-                {{ $colors := slice "#426AB3" "#A6325A" "#9966CC" "#D6A78B" "#37ACCB" "#B8989C" "#E0C1AF" "#E47888" }}
-=======
                 {{ $colors := slice "#426AB3" "#A6325A" "#9966CC" "#D6A78B" "#37ACCB" "#B8989C" "#E47888" }}
->>>>>>> Stashed changes
 	            {{ $max := sub (len $colors) 1 }}
                 {{ range $key, $value := .Data.Terms.ByCount }}
                 {{ $colorIndex := index (seq 0 $max | shuffle) 0 }}
